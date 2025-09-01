@@ -1,0 +1,60 @@
+title: "Open Source Ecosysteem voor Overheids-Software"
+description: "Een gids voor het opzetten van een open source ecosysteem in de publieke sector"
+baseurl: ""
+url: ""
+
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+
+collections:
+  chapters:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: "chapter"
+
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Rollen & Patronen"
+    url: "/rollen-en-patronen"
+  - title: "Deel I: Fundament"
+    subnav:
+      - title: "Hoofdstuk 1: Waarom Open Source?"
+        url: "/01-public-tech-introductie"
+      - title: "Hoofdstuk 2: Open Source Principes"
+        url: "/02-open-source-principes"
+  - title: "Deel II: Het Ecosysteem"
+    subnav:
+      - title: "Hoofdstuk 3: Software Ontwikkeling"
+        url: "/03-ecosysteem-ontwikkeling"
+      - title: "Hoofdstuk 4: Rollen in het Ecosysteem"
+        url: "/04-rollen-ecosysteem"
+  - title: "Deel III: Governance"
+    subnav:
+      - title: "Hoofdstuk 5: Governance Modellen"
+        url: "/05-governance-modellen"
+  - title: "Deel IV: Nederlandse Praktijk"
+    subnav:
+      - title: "Hoofdstuk 6: Nederlandse Initiatieven"
+        url: "/06-nederlandse-praktijk"
+  - title: "Deel V: Implementatie"
+    subnav:
+      - title: "Hoofdstuk 7: Uitdagingen"
+        url: "/07-implementatie-uitdagingen"
+      - title: "Hoofdstuk 8: Toekomstperspectieven"
+        url: "/08-toekomstperspectieven"

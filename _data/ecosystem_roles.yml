@@ -1,0 +1,326 @@
+---
+# Open Source Ecosysteem Rollen en Verantwoordelijkheden
+# Gebaseerd op de hoofdstukken 3, 4 en 5 van het document
+
+development_roles:
+  - name: "Hoofdaannemer"
+    category: "Ontwikkeling"
+    description: "Verantwoordelijk voor de realisatie van een bepaalde tool of oplossing"
+    responsibilities:
+      - "Budget- en planningsafspraken maken met opdrachtgever"
+      - "Keuze maken tussen bestaande open source tool of 'from scratch' ontwikkeling"
+      - "Ontwikkeltraject inrichten en uitvoeren"
+      - "Micro-funding voor kleine functionaliteiten organiseren"
+    skills_required:
+      - "Projectmanagement"
+      - "Open source kennis"
+      - "Budgetbeheer"
+    
+  - name: "Product Owner"
+    category: "Ontwikkeling"
+    description: "Verantwoordelijk voor producteigenaarschap en feature prioritering"
+    responsibilities:
+      - "Wensen van gemeenten verzamelen en vertalen naar user stories"
+      - "Beslissingen nemen over acceptatie van wijzigingen in code"
+      - "Focus van ontwikkeling bepalen"
+      - "Inspraakmogelijkheden organiseren en regels opstellen"
+      - "Eindverantwoordelijkheid voor productrichting"
+    skills_required:
+      - "Product management"
+      - "Stakeholder management"
+      - "Agile/Scrum kennis"
+
+infrastructure_roles:
+  - name: "Infrastructuur Specialist"
+    category: "Infrastructuur"
+    description: "Opzet en beheer van de technische infrastructuur"
+    responsibilities:
+      - "Infrastructuur inrichten voor data services en applicaties"
+      - "Service level agreements opstellen en handhaven"
+      - "Centrale infrastructuur opzetten en onderhouden"
+      - "Container orchestratie (Docker, Rancher) beheren"
+      - "API gateway services (KONG, API-Umbrella) configureren"
+      - "Load balancing, rate limiting, authenticatie implementeren"
+    skills_required:
+      - "OpenStack kennis"
+      - "Container technologieën"
+      - "API management"
+      - "System administration"
+    examples:
+      - "Datapunt Amsterdam"
+      - "ODC-Noord datacenter"
+
+  - name: "DevOps Engineer"
+    category: "Infrastructuur"
+    description: "Installatie, configuratie en operationeel beheer van software"
+    responsibilities:
+      - "Software installeren en configureren"
+      - "Infrastructuur regelen en onderhouden"
+      - "Monitoring en onderhoudswerkzaamheden uitvoeren"
+      - "Domeinnamen en SSL certificaten registreren en beheren"
+      - "Backups verzorgen"
+      - "Infrastructuurbeheer"
+    skills_required:
+      - "System administration"
+      - "Automation tools"
+      - "Security management"
+      - "Backup en recovery"
+
+quality_assurance_roles:
+  - name: "Code Quality Controller"
+    category: "Kwaliteitsborging"
+    description: "Borging van codekwaliteit, functionaliteit en compliance"
+    responsibilities:
+      - "Code opslaan en onderhouden (bij voorkeur GitHub)"
+      - "Kwaliteitscontrole op functionaliteit, leesbaarheid, veiligheid"
+      - "Juridische compliance checken (privacy, etc.)"
+      - "Fork-beheer en pull request processen faciliteren"
+      - "Code review processen inrichten"
+    skills_required:
+      - "Code review"
+      - "Git/GitHub workflows"
+      - "Security best practices"
+      - "Legal compliance kennis"
+
+  - name: "Functioneel Tester"
+    category: "Kwaliteitsborging" 
+    description: "Uitvoering van functionele tests onder leiding van product owner"
+    responsibilities:
+      - "Representatieve testgroepen betrekken"
+      - "Test schema's opstellen"
+      - "Grondig testen van applicaties voor implementatie"
+      - "Testresultaten rapporteren"
+    skills_required:
+      - "Test methodologies"
+      - "User experience"
+      - "Test automation"
+
+  - name: "Security Tester (Penetration Testing)"
+    category: "Kwaliteitsborging"
+    description: "White hat hacking voor beveiligingsanalyse"
+    responsibilities:
+      - "Beveiligingsproblemen identificeren door ethical hacking"
+      - "Penetratie tests uitvoeren"
+      - "Security rapporten opstellen"
+      - "Aanbevelingen voor beveiligingsverbeteringen geven"
+    skills_required:
+      - "Ethical hacking"
+      - "Security assessment"
+      - "Vulnerability analysis"
+
+management_support_roles:
+  - name: "Functioneel Beheerder"
+    category: "Beheer & Ondersteuning"
+    description: "Gebruikersbeheer en functionele configuratie"
+    responsibilities:
+      - "Gebruikers aanmaken en rechten toekennen"
+      - "Identiteitsverificatie en autorisatie processen"
+      - "Log monitoring en incident management"
+      - "Runtime configuratie beheren"
+      - "Applicatie vs database configuratie coördineren"
+    skills_required:
+      - "User management"
+      - "Access control"
+      - "System monitoring"
+
+  - name: "Implementation Specialist"
+    category: "Beheer & Ondersteuning"
+    description: "Software integratie in bedrijfsprocessen"
+    responsibilities:
+      - "Software in processen inpassen"
+      - "Maatwerk aanpassingen implementeren"
+      - "Gebruikersondersteuning bieden"
+      - "Vragen beantwoorden over softwaregebruik"
+      - "Training en documentatie verzorgen"
+    skills_required:
+      - "Business process analysis"
+      - "Change management"
+      - "Training en support"
+
+coordination_roles:
+  - name: "Hergebruik Promotor"
+    category: "Coördinatie & Promotie"
+    description: "Bevordering van hergebruik en samenwerking"
+    responsibilities:
+      - "Gebruik van beschikbare oplossingen promoten"
+      - "Gemeenten informeren over beschikbare tools"
+      - "Overkoepelende open source belangen uitdragen"
+      - "Samenwerking faciliteren tussen partijen"
+      - "Plannen delen en hergebruik stimuleren"
+    skills_required:
+      - "Community management"
+      - "Marketing & communicatie"
+      - "Stakeholder engagement"
+
+  - name: "Cultuur & Techniek Coördinator"  
+    category: "Coördinatie & Promotie"
+    description: "Cultuurontwikkeling en technische standaarden"
+    responsibilities:
+      - "Meetups organiseren voor developers en designers"
+      - "Best practices delen en standaardiseren"
+      - "Netwerk van open source professionals onderhouden"
+      - "Convergentie van technieken bevorderen"
+      - "Community kanalen beheren (Slack, forums)"
+    skills_required:
+      - "Event management"
+      - "Technical standards"
+      - "Community building"
+    examples:
+      - "Code for NL meetups"
+      - "Slack kanaal praatmee.codefor.nl"
+
+  - name: "Solutions Cataloger"
+    category: "Coördinatie & Promotie"
+    description: "Beheer van overzicht beschikbare oplossingen"
+    responsibilities:
+      - "Actueel overzicht van beschikbare software bijhouden"
+      - "Lopende ontwikkeltrajecten en voornemens documenteren"
+      - "Centrale vraagbaak voor tools en oplossingen beheren"
+      - "Use case gerichte informatie verstrekken (niet alleen technisch)"
+      - "Nederlandse vertalingen van catalogi verzorgen"
+    skills_required:
+      - "Information management"
+      - "Documentation"
+      - "Research & analysis"
+
+research_innovation_roles:
+  - name: "Ecosysteem Onderzoeker"
+    category: "Onderzoek & Innovatie"
+    description: "Onderzoek naar effectieve samenwerking en innovatie"
+    responsibilities:
+      - "Testen en verkennen van werkende oplossingen"
+      - "Ambities en mogelijkheden van partijen in kaart brengen"
+      - "Rolverdeling binnen ecosysteem optimaliseren"
+      - "Samenwerking tussen partijen bevorderen"
+      - "Nieuwe governance modellen onderzoeken"
+    skills_required:
+      - "Research methodologies"
+      - "Systems thinking" 
+      - "Innovation management"
+
+governance_models:
+  internal:
+    - name: "ICT Afdeling (Traditioneel)"
+      description: "Traditionele interne IT afdeling"
+      advantages:
+        - "Veel controlemechanismen"
+        - "Privacy en security controle"
+        - "Interne service levels"
+      disadvantages:
+        - "Vaak verouderde infrastructuur"
+        - "Minder flexibel door legacy en budget constraints"
+        - "Niet geschikt voor moderne web applicaties"
+
+    - name: "Vernieuwde Interne Aanbieder"
+      description: "Nieuwe interne aanbieder naast traditionele ICT (zoals Datapunt Amsterdam)"
+      advantages:
+        - "Minder bureaucratisch"
+        - "Meer vrijheid in techniekeuze"
+        - "Agile werkwijze mogelijk"
+      disadvantages:
+        - "Dubbele structuren"
+        - "Mogelijk weerstand van bestaande ICT"
+      examples:
+        - "Datapunt Amsterdam"
+        - "VNG Common Ground initiative"
+
+    - name: "Interne Service Teams"
+      description: "Zelfstandige teams per domein (Digital Transformation model)"
+      advantages:
+        - "Business en software verantwoordelijkheid gecombineerd"
+        - "Volledige autonomie per domein" 
+        - "Afrekening op kwaliteit van dienstverlening"
+      disadvantages:
+        - "Mogelijk duplicatie van efforts"
+        - "Coördinatie tussen teams complex"
+      examples:
+        - "Open Stad Amsterdam"
+
+  external:
+    - name: "Web Development Bureau"
+      description: "Externe partij voor installatie, onderhoud en beheer"
+      advantages:
+        - "Ruime keus aan leveranciers"
+        - "Specialistische kennis"
+        - "Snelle implementatie mogelijk"
+      disadvantages:
+        - "Elke gemeente zoekt opnieuw"
+        - "Duplicatie van oplossingen"
+        - "Beperkt zicht op interne processen"
+        - "Veiligheidsrisico's"
+      requirements:
+        - "Data eigendom bij gemeente"
+        - "Eenvoudige data export mogelijk"
+        - "Software wijzigingen open source publiceren"
+        - "Open standaarden hanteren"
+        - "Security audits uitvoeren"
+
+    - name: "Startups"
+      description: "Jonge bedrijven met SaaS oplossingen"
+      advantages:
+        - "Snelle en eenvoudige experimentatie"
+        - "Innovatieve oplossingen"
+      disadvantages:
+        - "Meestal closed source"
+        - "Transparantie en vendor lock-in risico's"
+        - "Data ownership onduidelijk"
+      considerations:
+        - "Controle mechanismen voor kritieke processen"
+        - "Mogelijk aandeelhouderschap overwegen"
+
+  collective:
+    - name: "Specifieke Stichting"
+      description: "Stichting opgericht voor één specifieke oplossing"
+      advantages:
+        - "Gerichte focus op één product"
+        - "Alle capaciteit ingezet voor doorontwikkeling"
+      disadvantages:
+        - "Kritieke massa lange termijn commitment nodig"
+        - "Stabiele inkomstenstroom vereist"
+      examples:
+        - "Stichting Pleio"
+
+    - name: "Specifieke Coöperatie/Vereniging"
+      description: "Ledegerichte organisatie voor specifieke oplossing"
+      advantages:
+        - "Leden bepalen koers"
+        - "Democratische besluitvorming"
+      disadvantages:
+        - "Management overhead"
+        - "Veel tijd in vergaderen in plaats van ontwikkelen"
+
+    - name: "Algemene Stichting"
+      description: "Stichting voor portfolio van applicaties"
+      advantages:
+        - "Snel op te tuigen"
+        - "Schaalvoordelen"
+        - "Brede expertise"
+      disadvantages:
+        - "Interne prioritering kan sommige apps benadelen"
+        - "Minder focus per applicatie"
+      examples:
+        - "Stichting ICTU"
+        - "Foundation for Public Code"
+        - "Stichting Code for NL"
+        - "Stichting Open Source en Overheid"
+
+    - name: "VNG Model"
+      description: "Afdeling binnen VNG voor open source applicaties"
+      advantages:
+        - "Bestaande gemeente netwerk"
+        - "Centrale coördinatie"
+      disadvantages:
+        - "Bureaucratie risico"
+        - "Mogelijk minder innovatief"
+      examples:
+        - "6AIKA (Finland) - 6 steden met gezamenlijk dev team"
+
+    - name: "Algemene Coöperatie Overheid+Markt"
+      description: "Samenwerking tussen overheid en marktpartijen"
+      advantages:
+        - "Combinatie publieke en private expertise"
+        - "Basis voor levendig ecosysteem"
+        - "Diensten voor zowel overheid als marktpartijen"
+      disadvantages:
+        - "Complexe governance"
+        - "Mogelijk belangenconflicten"
