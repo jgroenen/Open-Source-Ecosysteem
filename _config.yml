@@ -1,7 +1,7 @@
 title: "Open Source Ecosysteem voor Overheids-Software"
 description: "Een gids voor het opzetten van een open source ecosysteem in de publieke sector"
-baseurl: ""
-url: ""
+baseurl: "/Open-Source-Ecosysteem"
+url: "https://www.jgroenen.nl"
 
 markdown: kramdown
 highlighter: rouge
